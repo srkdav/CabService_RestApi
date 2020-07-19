@@ -84,15 +84,15 @@ db, err = gorm.Open("mysql", "<username>:<password>@tcp(localhost:<port number>)
 
 6. After running the application, Tables will be created under the "cabrestapi" Database.
 
-7.Populate Customer data , Cab data :
+7. Populate Customer data , Cab data :
 
 Customer Data :
 ```
-insert into customers values ( null,"steve",0,0,2,2);
-insert into customers values ( null,"tony",2,2,4,4);
-insert into customers values ( null,"bruce",4,5,7,8);
-insert into customers values ( null,"bruce",4,4,4,4);
-insert into customers values ( null,"clark",10,10,15,16);
+insert into customers values ( 1,"steve",0,0,2,2);
+insert into customers values ( 2,"tony",2,2,4,4);
+insert into customers values ( 3,"bruce",4,5,7,8);
+insert into customers values ( 4,"bruce",4,4,4,4);
+insert into customers values ( 5,"clark",10,10,15,16);
 ```
 
 Cabs Data:
