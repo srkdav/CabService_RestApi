@@ -7,10 +7,10 @@ import (
 	"strconv"
 
 	"github.com/jinzhu/gorm"
-	"github.com/karthick/CabService_RestApi/db"
+	"github.com/Projects/CabService_RestApi/db"
 
 	"github.com/gorilla/mux"
-	"github.com/karthick/CabService_RestApi/models"
+	"github.com/Projects/CabService_RestApi/models"
 )
 
 //GetCabs : get closest cabs
