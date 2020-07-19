@@ -67,10 +67,12 @@ mkdir -p $GOPATH/src/github.com/Projects
 ```sh
 git clone https://github.com/srkdav/CabService_RestApi.git
 ```
-4.Change the MySQL properties :
-
+4.Change the MySQL properties under db/db.go :
 ```
-db, err = gorm.Open("mysql", "<username>:<password>@tcp(localhost:<port number>)/<databse_name>")
+create database cabrestapi;
+```
+```
+db, err = gorm.Open("mysql", "<username>:<password>@tcp(localhost:<port number>)/cabrestapi")
 	
 ```
 
@@ -78,6 +80,28 @@ db, err = gorm.Open("mysql", "<username>:<password>@tcp(localhost:<port number>)
 ```sh
   go build && ./CabService_RestApi
 ```
+
+6. After running the application, Tables will be created under the "cabrestapi" Database.
+
+7.Populate Customer data , Cab data :
+
+Customer Data :
+```
+insert into customers values ( null,"steve",0,0,2,2);
+insert into customers values ( null,"tony",2,2,4,4);
+insert into customers values ( null,"bruce",4,5,7,8);
+insert into customers values ( null,"bruce",4,4,4,4);
+insert into customers values ( null,"clark",10,10,15,16);
+
+Cabs Data:
+```
+insert into cabs values ( 100,"lewis",1,1,true,0,0);
+insert into cabs values ( 200,"dani",2,2,true,0,0);
+insert into cabs values ( 300,"lewis",5,5,true,0,0);
+insert into cabs values ( 400,"lewis",1,1,true,0,0);
+insert into cabs values ( 500,"sainz",9,10,true,0,0);
+```
+
 ### After Running the application
 
 1. Customers can find the cabs around them : 
