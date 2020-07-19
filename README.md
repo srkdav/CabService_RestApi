@@ -52,6 +52,7 @@ To get a local copy up and running follow these simple steps.
 * GoLang 1.14.5
 * MySQL 
 * PostMan
+* VSCode
 ```
 
 ### Installation
@@ -92,6 +93,7 @@ insert into customers values ( null,"tony",2,2,4,4);
 insert into customers values ( null,"bruce",4,5,7,8);
 insert into customers values ( null,"bruce",4,4,4,4);
 insert into customers values ( null,"clark",10,10,15,16);
+```
 
 Cabs Data:
 ```
