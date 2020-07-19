@@ -5,7 +5,7 @@ import (
 
 	// _ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
-	"github.com/karthick/CabService_RestApi/models"
+	"github.com/Projects/CabService_RestApi/models"
 )
 
 var db *gorm.DB
