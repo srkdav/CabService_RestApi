@@ -6,7 +6,7 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
-	"github.com/karthick/CabService_RestApi/controller"
+	"github.com/Projects/CabService_RestApi/controller"
 )
 
 func main() {
